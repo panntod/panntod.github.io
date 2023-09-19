@@ -35,18 +35,18 @@ nav ul li a {
 }
 
 nav ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: rgba(14, 14, 234, 0.9);
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    transition: .5s;
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgba(14, 14, 234, 0.9);
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  transition: 0.5s;
 }
 
 nav ul li:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav ul li a:hover {
@@ -71,25 +71,26 @@ span {
   color: #555;
   font-size: 20px;
   line-height: 22px;
-  margin-bottom: 30px;
 }
 
 .detel a {
-  padding: 15px 30px;
-  border-radius: 10px;
-  transition: 0.5s;
-  font-size: 16px;
-  color: #fff;
-  text-decoration: none;
   background: rgba(14, 14, 234, 0.9);
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 30px 0;
 }
 
 .detel a:hover {
   background: #fff;
   color: rgba(14, 14, 234, 0.9);
   border-radius: 6px;
-  box-shadow: 0 0 5px #fff, 0 0 25px #fff,
-    0 0 50px rgba(14, 14, 234, 0.9), 0 0 100px rgba(14, 14, 234, 0.9);
+  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px rgba(14, 14, 234, 0.9),
+    0 0 100px rgba(14, 14, 234, 0.9);
 }
 
 .images {
@@ -97,21 +98,22 @@ span {
   height: 80%;
   position: absolute;
   bottom: 0;
-  left: 35%;
+  right: 100px;
 }
 
-.images img {
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  transform: translateX(40%);
-  transition: bottom 1s, left 1s;
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: left 1s, bottom 1s;
 }
 
-.shape {
-  right: 60px;
+.images:hover .shape{
+   bottom: 40px; 
 }
 
-.pandhu {
-  right: 50px;
+.images:hover .pandhu{
+    left: 45%
 }
