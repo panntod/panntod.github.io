@@ -56,6 +56,15 @@ nav ul li a:hover {
 .content{
   display: flex;
   justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .detel {
