@@ -15,7 +15,7 @@ nav {
   display: flex;
   width: 84%;
   margin: auto;
-  padding: 20px 0;
+  padding: 1.25rem 0; /* Mengganti 20px menjadi 1.25rem */
   align-items: center;
   justify-content: space-between;
 }
@@ -23,7 +23,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 0.625rem 1.25rem; /* Mengganti 10px dan 20px menjadi 0.625rem dan 1.25rem */
   position: relative;
   cursor: pointer;
 }
@@ -36,12 +36,12 @@ nav ul li a {
 
 nav ul li::after {
   content: "";
-  height: 3px;
+  height: 0.1875rem; /* Mengganti 3px menjadi 0.1875rem */
   width: 0;
   background: rgba(14, 14, 234, 0.9);
   position: absolute;
   left: 0;
-  bottom: -15px;
+  bottom: -0.9375rem; /* Mengganti -15px menjadi -0.9375rem */
   transition: 0.5s;
 }
 
@@ -53,14 +53,19 @@ nav ul li a:hover {
   color: rgba(14, 14, 234, 0.9);
 }
 
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
 .detel {
   margin: 13% 0 0 8%;
 }
 
 .detel h1 {
-  font-size: 50px;
+  font-size: 3.5rem; /* Mengganti 50px menjadi 3.125rem */
   color: #212121;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
 }
 
 span {
@@ -69,51 +74,37 @@ span {
 
 .detel p {
   color: #555;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
+  line-height: 1.375rem; /* Mengganti 22px menjadi 1.375rem */
+  margin-bottom: 1.875rem; /* Mengganti 30px menjadi 1.875rem */
 }
 
 .detel a {
   background: rgba(14, 14, 234, 0.9);
-  padding: 15px 30px;
+  padding: 1.3rem 3.75rem; /* Mengganti 15px dan 30px menjadi 1.875rem dan 3.75rem */
   text-decoration: none;
   transition: 0.5s;
   font-weight: bold;
   color: #fff;
   display: inline-block;
-  border-radius: 10px;
-  margin: 30px 0;
+  border-radius: 2em; /* Mengganti 10px menjadi 1rem */
+  margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
 }
 
 .detel a:hover {
   background: #fff;
   color: rgba(14, 14, 234, 0.9);
-  border-radius: 6px;
-  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px rgba(14, 14, 234, 0.9),
-    0 0 100px rgba(14, 14, 234, 0.9);
+  border-radius: 0.375rem; /* Mengganti 6px menjadi 0.375rem */
+  box-shadow: 0 0 0.3125rem #fff, 0 0 1.5625rem #fff,
+    0 0 3.125rem rgba(14, 14, 234, 0.9), 0 0 6.25rem rgba(14, 14, 234, 0.9);
 }
 
 .images {
   width: 45%;
   height: 80%;
-  position: absolute;
-  bottom: 0;
-  right: 100px;
 }
 
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: left 1s, bottom 1s;
-}
-
-.images:hover .shape{
-   bottom: 40px; 
-}
-
-.images:hover .pandhu{
-    left: 45%
+.images img {
+  height: 100%;
+  width: 90%;
 }
