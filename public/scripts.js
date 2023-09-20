@@ -4,3 +4,4 @@ const mengetik = new Typed(".typing", {
     backSpeed: 50,
     loop: true
 })
+
