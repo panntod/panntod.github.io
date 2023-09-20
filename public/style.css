@@ -62,20 +62,7 @@ nav ul li:hover::after {
 .content{
   display: flex;
   justify-content: space-between;
-  flex-direction: column-reverse;
-}
-
-@media screen and (min-width: 768px) {
-  .content{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .detel h1 {
-    font-size: 2rem; /* Mengganti 50px menjadi 3.125rem */
-    color: #212121;
-    margin-bottom: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
-  }
+  flex-direction: row;
 }
 
 .detel {
@@ -158,3 +145,34 @@ span {
   font-size: 1.8rem;
 }
 
+
+@media screen and (max-width: 768px) {
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .detel h1 {
+    font-size: 3rem; 
+    color: #212121;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .download a {
+    padding: .8rem 2rem;
+    transition: 0.5s;
+    color: #fff;
+    display: inline-block;
+    margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
+    font-size: 1rem;
+  }
+  .sosmed-icon {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #212121;
+    margin: 15px;
+  }
+}
