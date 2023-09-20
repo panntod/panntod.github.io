@@ -1,10 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.section{
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +55,7 @@ nav ul li:hover::after {
   width: 100%;
 }
 
-.font{
+.font {
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -59,7 +65,7 @@ nav ul li:hover::after {
   color: rgba(14, 14, 234, 0.9);
 }
 
-.content{
+.content {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -70,7 +76,8 @@ nav ul li:hover::after {
 }
 
 .detel h1 {
-  font-size: 3.5rem; /* Mengganti 50px menjadi 3.125rem */
+  font-size: 3.5rem; 
+  font-weight: bold;
   color: #212121;
   margin-bottom: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
 }
@@ -109,25 +116,84 @@ span {
 .sosmed-icon {
   width: max-content;
   margin-bottom: 1rem;
-  font-size: 2.75rem;
+  font-size: 2.4rem;
   color: #212121;
   margin: 0 10px;
 }
 
-.sosmed-icon:hover i{
-  color:  rgba(14, 14, 234, 0.9);
+.sosmed-icon:hover i {
+  color: rgba(14, 14, 234, 0.9);
+}
+
+/* projects */
+
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(14, 14, 234, 0.9);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
+  background-color: rgba(14, 14, 234, 0.9);
+}
+
+.projects {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.project-container {
+  row-gap: 2rem;
+  margin-bottom: 12rem;
+}
+
+.project-img {
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.55);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project-img img {
+  transition: 1s;
+  object-fit: cover; /* Tambahkan ini untuk mengatur gambar agar berada di tengah dan tetap proporsional */
+  width: 100%;
+  height: 100%;
+}
+
+.project-img img:hover {
+  transform: scale(1.2);
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  margin: 0 1rem;
 }
 
 /* footer */
-.footer{
-  margin-top: .5rem;
+.footer {
+  margin-top: 0.5rem;
   background-color: #fff;
   text-align: center;
   font-weight: 1rem;
   padding: 2rem 0;
 }
 
-.footer-title{
+.footer-title {
   color: #212121;
   font-size: 2rem;
   font-weight: bold;
@@ -136,43 +202,48 @@ span {
 
 .footer-subtitle {
   color: #212121;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 0 2rem;
 }
 
-.footer-social i{
-  margin-bottom: .8rem;
+.footer-social i {
+  margin-bottom: 0.8rem;
   font-size: 1.8rem;
 }
 
+.footer-copy{
+  font-size: .8rem;
+}
 
 @media screen and (max-width: 768px) {
-  .content{
+  .content {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
   }
   .detel h1 {
-    font-size: 3rem; 
+    font-size: 2.8rem;
     color: #212121;
     margin-bottom: 1.25rem;
     font-weight: bold;
   }
-  p{
-    font-size: 1rem;
+  p {
+    font-size: .8rem;
   }
   .download a {
-    padding: .8rem 2rem;
+    padding: 0.8rem 2rem;
     transition: 0.5s;
-    color: #fff;
-    display: inline-block;
-    margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
-    font-size: 1rem;
+    margin: .8rem 0;
+    font-size: .8rem;
   }
   .sosmed-icon {
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #212121;
     margin: 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
   }
 }
