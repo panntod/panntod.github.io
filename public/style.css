@@ -221,6 +221,9 @@ span {
     justify-content: space-between;
     flex-direction: column-reverse;
   }
+  .detel {
+    margin: 8%;
+  }
   .detel h1 {
     font-size: 2.5rem;
     color: #212121;
