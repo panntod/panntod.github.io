@@ -65,6 +65,7 @@ nav ul li:hover::after {
   color: rgba(14, 14, 234, 0.9);
 }
 
+/* Body */
 .content {
   display: flex;
   justify-content: space-between;
