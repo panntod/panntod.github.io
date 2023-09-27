@@ -284,4 +284,12 @@ span {
   .section-title {
     font-size: 1.8rem;
   }
+
+  .contact{
+    margin: 2rem;
+  }
+
+  .mt-screen{
+    margin-top: 1rem;
+  }
 }
