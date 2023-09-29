@@ -21,7 +21,9 @@
     <!-- navbar -->
     <div class="section overflow-x-hidden">
       <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1">
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1"
+        >
           <div class="container-fluid d-flex ms-5">
             <h2 class="fw-bold">
               Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
@@ -57,7 +59,9 @@
                 <a class="nav-link font text-center" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font text-center" href="#projects">PROJECT</a>
+                <a class="nav-link font text-center" href="#projects"
+                  >PROJECT</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link font text-center" href="#contact">Contact</a>
@@ -69,17 +73,23 @@
 
       <!-- main -->
       <main class="hero">
-        <button class="top-button" id="scrollToTop"><i class='bx bx-arrow-from-bottom'></i></button>
+        <button class="top-button" id="scrollToTop">
+          <i class="bx bx-arrow-from-bottom"></i>
+        </button>
         <section class="content">
           <div class="detel col-lg-6">
-            <h1 class="mengetik">Hi I'm Pandhu Arya 
-              <br> a <span class="typing"></span></h1>
+            <h1 class="mengetik">
+              Hi I'm Pandhu Arya <br />
+              a <span class="typing"></span>
+            </h1>
             <p>
               This is my official portfolio website to showes all details and
               work exiprins web development
             </p>
 
-            <p class="download"><a href="#">DOWNLOAD CV</a></p>
+            <p class="download">
+              <a href="#" class="btn-primary btn">DOWNLOAD CV</a>
+            </p>
 
             <!-- sosmed -->
             <div class="sosmed">
@@ -95,7 +105,6 @@
                 ><i class="bx bxl-facebook"></i
               ></a>
             </div>
-            
           </div>
 
           <!-- img -->
@@ -135,7 +144,13 @@
           <h2 class="section-title">Contact Me</h2>
           <div class="row justify-content-center">
             <div class="contact-container">
-              <form method="POST" id="contact-form" name="contact-form">
+
+              <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                <strong>Thank You!</strong> Your Message Succesfully Send
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <form method="post" id="contact-form" name="contact-form">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -145,6 +160,8 @@
                         name="name"
                         id="name"
                         placeholder="Name"
+                        autocomplete="off"
+                        required
                       />
                     </div>
                   </div>
@@ -156,6 +173,8 @@
                         name="email"
                         id="email"
                         placeholder="Email"
+                        autocomplete="off"
+                        required
                       />
                     </div>
                   </div>
@@ -167,6 +186,8 @@
                         name="subject"
                         id="subject"
                         placeholder="Subject"
+                        autocomplete="off"
+                        required
                       />
                     </div>
                   </div>
@@ -179,16 +200,34 @@
                         cols="30"
                         rows="7"
                         placeholder="Message"
+                        autocomplete="off"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-md-12 mt">
                     <div class="form-group">
-                      <input
+                      <button
                         type="submit"
-                        value="Send Message"
-                        class="btn tombol"
-                      />
+                        class="btn btn-primary tombol tombol-kirim"
+                      >
+                        Send Message
+                      </button>
+
+                      <button
+                        class="btn btn-primary tombol tombol-loading d-none"
+                        type="button"
+                        disabled
+                      >
+                        <span
+                          class="spinner-border spinner-border-sm"
+                          aria-hidden="true"
+                          style="color: whitesmoke"
+                        ></span>
+                        <span role="status" style="color: whitesmoke"
+                          >Loading...</span
+                        >
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -221,6 +260,7 @@
 
     <script src="public/type.js"></script>
     <script src="public/scripts.js"></script>
+    <script src="./server/discord.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
