@@ -11,6 +11,7 @@ html {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  scroll-padding-top: 4rem;
 }
 
 .section {
@@ -22,7 +23,7 @@ html {
 .hero {
   position: relative;
   width: 100%;
-  margin-top: 50px;
+  padding-top: 3rem;
   min-height: 100vh;
   background: #eff4fd;
 }
