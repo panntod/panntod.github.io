@@ -279,6 +279,11 @@ span {
     margin: 8%;
   }
 
+  .top-button {
+    font-size: 1rem;
+    padding: 0.5rem .8rem;
+  }
+
   .ms-5 {
     margin-left: 1rem !important;
   }
