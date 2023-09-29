@@ -1,5 +1,6 @@
 const scriptURL =
 "https://script.google.com/macros/s/AKfycbxGfA8DJox2zVLcD4JAi5bc9KGMz41oqvxg552--CFf8K9YkbiczLDjQhSW9877zRMBlg/exec";
+
 const form = document.forms["contact-form"];
 const tombolKirim = document.querySelector('.tombol-kirim')
 const tombolLoading = document.querySelector('.tombol-loading')
