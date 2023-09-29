@@ -69,6 +69,21 @@ nav ul li:hover::after {
   color: rgba(14, 14, 234, 0.9);
 }
 
+/* on top */
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.6rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: .5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
 /* Body */
 .content {
   display: flex;
