@@ -1,277 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Web</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="public/style.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="section overflow-x-hidden">
-      <header>
-        <nav
-          class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1"
-        >
-          <div class="container-fluid d-flex ms-5">
-            <h2 class="fw-bold">
-              Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
-            </h2>
-            <button
-              class="navbar-toggler border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"
-                />
-              </svg>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Web</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="public/style.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="section overflow-x-hidden">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1">
+        <div class="container-fluid d-flex ms-5">
+          <h2 class="fw-bold">
+            Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
+          </h2>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link font text-center" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font text-center" href="#projects">PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font text-center" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="hero">
+      <button class="top-button" id="scrollToTop">
+        <i class="bx bx-arrow-from-bottom"></i>
+      </button>
+      <section class="content">
+        <div class="detel col-lg-6">
+          <h1 class="mengetik">
+            Hi I'm Pandhu Arya <br />
+            a <span class="typing"></span>
+          </h1>
+          <p>
+            This is my official portfolio website to showes all details and
+            work exiprins web development
+          </p>
+
+          <p class="download">
+            <a href="#" class="btn-primary btn">DOWNLOAD CV</a>
+          </p>
+
+          <!-- sosmed -->
+          <div class="sosmed">
+            <a href="https://www.instagram.com/pandhuu._" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
+            <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i
+                class="bx bxl-facebook"></i></a>
+            <a href="www.linkedin.com/in/pandhu-arya-munjalindra-b9834b294/" class="sosmed-icon">
+              <i class="bx bxl-linkedin"></i>
+            </a>
           </div>
-          <div
-            class="collapse navbar-collapse w-50"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link font text-center" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font text-center" href="#projects"
-                  >PROJECT</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font text-center" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+        </div>
 
-      <!-- main -->
-      <main class="hero">
-        <button class="top-button" id="scrollToTop">
-          <i class="bx bx-arrow-from-bottom"></i>
-        </button>
-        <section class="content">
-          <div class="detel col-lg-6">
-            <h1 class="mengetik">
-              Hi I'm Pandhu Arya <br />
-              a <span class="typing"></span>
-            </h1>
-            <p>
-              This is my official portfolio website to showes all details and
-              work exiprins web development
-            </p>
+        <!-- img -->
+        <div class="w-auto mx-auto col-lg-6 float-lg-end ms-lg-3">
+          <img class="img-fluid" src="images/pandhu-n-bg.svg" />
+        </div>
+      </section>
 
-            <p class="download">
-              <a href="#" class="btn-primary btn">DOWNLOAD CV</a>
-            </p>
+      <!-- project -->
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
 
-            <!-- sosmed -->
-            <div class="sosmed">
-              <a href="https://www.instagram.com/pandhuu._" class="sosmed-icon"
-                ><i class="bx bxl-instagram"></i
-              ></a>
-              <a href="https://github.com/panntod" class="sosmed-icon"
-                ><i class="bx bxl-github"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/pandhu.munjalindra"
-                class="sosmed-icon"
-                ><i class="bx bxl-facebook"></i
-              ></a>
+        <div class="project-container bd-grid">
+          <a href="https://kantin-pandhu.000webhostapp.com/login.php" class="project-img">
+            <img src="images/kantin-web.png" alt="" />
+          </a>
+          <a href="https://tools-react-ten.vercel.app/todos" class="project-img">
+            <img src="images/todosList.png" alt="" />
+          </a>
+          <a href="https://github.com/panntod/Belajar-Crud-Js" class="project-img">
+            <img src="images/crud-web.png" alt="" />
+          </a>
+          <a href="https://github.com/panntod/Project-Php/tree/main/Siswa" class="project-img">
+            <img src="images/perpustakaan-web.png" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="contact-container">
+
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Thank You!</strong> Your Message Succesfully Send
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-          </div>
 
-          <!-- img -->
-          <div class="w-auto mx-auto col-lg-6 float-lg-end ms-lg-3">
-            <img class="img-fluid" src="images/pandhu-n-bg.svg" />
-          </div>
-        </section>
-
-        <!-- project -->
-        <section class="projects" id="projects">
-          <h2 class="section-title">Projects</h2>
-
-          <div class="project-container bd-grid">
-            <a
-              href="https://kantin-pandhu.000webhostapp.com/login.php"
-              class="project-img"
-            >
-              <img src="images/kantin-web.png" alt="" />
-            </a>
-            <a
-              href="https://tools-react-ten.vercel.app/todos"
-              class="project-img"
-            >
-              <img src="images/todosList.png" alt="" />
-            </a>
-            <a
-              href="https://github.com/panntod/Belajar-Crud-Js"
-              class="project-img"
-            >
-              <img src="images/crud-web.png" alt="" />
-            </a>
-            <a
-              href="https://github.com/panntod/Project-Php/tree/main/Siswa"
-              class="project-img"
-            >
-              <img src="images/perpustakaan-web.png" alt="" />
-            </a>
-          </div>
-        </section>
-
-        <!-- Contact Me -->
-        <section class="contact" id="contact">
-          <h2 class="section-title">Contact Me</h2>
-          <div class="row justify-content-center">
-            <div class="contact-container">
-
-              <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                <strong>Thank You!</strong> Your Message Succesfully Send
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-
-              <form method="post" id="contact-form" name="contact-form">
-                <input type="hidden" name="from" value="personal web">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group mt-screen">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12 mt">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="subject"
-                        id="subject"
-                        placeholder="Subject"
-                        autocomplete="off"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12 mt">
-                    <div class="form-group">
-                      <textarea
-                        name="message"
-                        class="form-control"
-                        id="message"
-                        cols="30"
-                        rows="7"
-                        placeholder="Message"
-                        autocomplete="off"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12 mt">
-                    <div class="form-group">
-                      <button
-                        type="submit"
-                        class="btn btn-primary tombol tombol-kirim"
-                      >
-                        Send Message
-                      </button>
-
-                      <button
-                        class="btn btn-primary tombol tombol-loading d-none"
-                        type="button"
-                        disabled
-                      >
-                        <span
-                          class="spinner-border spinner-border-sm"
-                          aria-hidden="true"
-                          style="color: whitesmoke"
-                        ></span>
-                        <span role="status" style="color: whitesmoke"
-                          >Loading...</span
-                        >
-                      </button>
-                    </div>
+            <form method="post" id="contact-form" name="contact-form">
+              <input type="hidden" name="from" value="personal web">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" autocomplete="off"
+                      required />
                   </div>
                 </div>
-              </form>
-            </div>
+                <div class="col-md-6">
+                  <div class="form-group mt-screen">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                      autocomplete="off" required />
+                  </div>
+                </div>
+                <div class="col-md-12 mt">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                      autocomplete="off" required />
+                  </div>
+                </div>
+                <div class="col-md-12 mt">
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"
+                      autocomplete="off" required></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 mt">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary tombol tombol-kirim">
+                      Send Message
+                    </button>
+
+                    <button class="btn btn-primary tombol tombol-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" aria-hidden="true"
+                        style="color: whitesmoke"></span>
+                      <span role="status" style="color: whitesmoke">Loading...</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-        </section>
-      </main>
-
-      <!-- footer -->
-      <footer class="footer">
-        <p class="footer-title">Based In</p>
-        <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/pandhuu._" class="sosmed-icon"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://github.com/panntod" class="sosmed-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/pandhu.munjalindra"
-            class="sosmed-icon"
-            ><i class="bx bxl-facebook"></i
-          ></a>
         </div>
-        <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
-      </footer>
-    </div>
+      </section>
+    </main>
 
-    <script src="public/type.js"></script>
-    <script src="public/scripts.js"></script>
-    <script src="./server/spreadsheet.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer-title">Based In</p>
+      <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
+
+      <!-- Sosmed -->
+      <div class="footer-social">
+        <a href="https://www.instagram.com/pandhuu._" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
+        <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
+        <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
+        <a href="www.linkedin.com/in/pandhu-arya-munjalindra-b9834b294/" class="sosmed-icon">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
+    </footer>
+  </div>
+
+  <script src="public/type.js"></script>
+  <script src="public/scripts.js"></script>
+  <script src="./server/spreadsheet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
