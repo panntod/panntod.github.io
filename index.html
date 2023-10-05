@@ -181,11 +181,40 @@
       </section>
 
       <!-- Contact Me -->
-      <!-- <section class="contact" id="contact">
+      <section class="contact" id="contact">
         <h2 class="section-title">Contact Me</h2>
+        <div class="container mt-lg-5">
+          <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+            <strong>Thank You!</strong> Your Message Succesfully Send
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
 
+          <form class="bg-white shadow p-4 rounded" name="contact-form">
+            <input type="hidden" value="boostrap" name="from" />
+            <div class="mb-3">
+              <label class="form-label" for="name">Nama</label>
+              <input class="form-control" id="name" type="text" placeholder="Nama Anda" name="name" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" id="email" type="email" placeholder="Alamat Email Anda" name="email" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="message">Pesan</label>
+              <textarea class="form-control" id="message" placeholder="Tulis pesan Anda di sini" rows="4"
+                name="message"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary tombol-kirim tombol" value="kirim">Send Message</button>
+              <button class="btn btn-primary  tombol-loading tombol d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm text-white" aria-hidden="true"></span>
+                <span role="status" class="text-white">Loading...</span>
+              </button>
+            </div>
+          </form>
+        </div>
         <div class="row justify-content-center"></div>
-      </section> -->
+      </section>
     </main>
 
     <!-- footer -->
