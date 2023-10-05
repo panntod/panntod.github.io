@@ -266,7 +266,7 @@ span {
 }
 
 .project-img img {
-  transition: .8s;
+  transition: .6s;
   object-fit: cover; 
   width: 100%;
   height: 100%;
@@ -401,13 +401,15 @@ span {
     padding: 0.7rem;
     font-size: .7rem;
   }
+
+  /* card */
   .card {
     width: auto;
-    height: auto;
+    height: calc(auto + 30px);
   }
 
   .card__content{
-    padding: 1rem;
+    padding: .6rem;
   }
 
   .card__title {
@@ -416,7 +418,7 @@ span {
   
   .card__description {
     font-size: .8rem;
-    line-height: 1.2;
+    line-height: 1;
   }
   
   .card__button{
@@ -426,8 +428,11 @@ span {
   .card__button a{
     border-radius: 8px;
     padding: .2rem .8rem;
-    font-size: .8rem;
+    font-size: .6rem;
     color: #fff;
   }
 
+  .mg-d-none{
+    display: none;
+  }
 }
