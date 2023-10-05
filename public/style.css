@@ -294,6 +294,7 @@ span {
 
 .contact-container {
   width: fit-content;
+  background: red;
 }
 
 .contact .mt {
@@ -432,4 +433,7 @@ span {
     color: #fff;
   }
 
+  .mg-d-none{
+    display: none;
+  }
 }
