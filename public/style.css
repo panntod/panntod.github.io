@@ -26,11 +26,13 @@ html {
   background: #eff4fd;
 }
 
+
+/* Navbar */
 nav {
   display: flex;
   width: 84%;
   margin: auto;
-  padding: 1.25rem 0; /* Mengganti 20px menjadi 1.25rem */
+  padding: 1.25rem 0; 
   align-items: center;
   justify-content: space-between;
 }
@@ -166,15 +168,16 @@ span {
 }
 
 .projects {
+  min-height: 100vh;
+  background: #eff4fd;
   display: grid;
   align-items: center;
   justify-content: center;
-  margin: 5rem 0;
+  padding: 4rem 0;
 }
 
 .project-container {
   row-gap: 2rem;
-  margin-bottom: 12rem;
 }
 
 .project-img {
