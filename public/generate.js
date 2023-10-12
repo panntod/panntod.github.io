@@ -73,7 +73,7 @@ function generateProjectCard(project) {
             <p class="card__title">${project.title}</p>
             <p class="card__description mg-d-none"><strong>Desc:</strong> ${project.description}</p>
             <p class="card__description mg-d-none"><strong>Build with:</strong> ${project.buildWith}</p>
-            ${project.hasDemo ? `<p class="card__description">[Sudah dibuat tampilan di handphone]</p>` : ""}
+            ${project.hasDemo ? `<p class="card__description">[Sudah dibuat tampilan]</p>` : ""}
             <div class="card__button">
                 <a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i>Github</a>
                 ${project.hasDemo ? `<a href="${project.demoLink}" class="demo">Demo</a>` : ""}
