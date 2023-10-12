@@ -274,6 +274,21 @@ span {
   margin: 0 1rem;
 }
 
+/* see more */
+.see-more{
+  display: flex;
+  justify-content: end;
+}
+
+.see-more a{
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.see-more a:hover{
+  text-decoration: underline;
+}
+
 /* contact */
 .contact {
   margin: 3rem 0;
