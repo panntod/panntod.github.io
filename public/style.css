@@ -264,6 +264,10 @@ span {
   background: #007bff;
 }
 
+.figma{
+  background: #610C9F;
+}
+
 .project-img img {
   transition: .6s;
   object-fit: cover; 
