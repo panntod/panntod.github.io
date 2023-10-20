@@ -4,8 +4,9 @@ const projectsData = [
         imgSrc: "images/perpustakaanOnline.png",
         description: "Ini adalah project yang dibuat menggunakan php...",
         buildWith: "Html5, Css3, PHP, Bootstrap, MySQL",
-        hasDemo: false,
+        hasDemo: true,
         githubLink: "https://github.com/panntod/Project-Php/tree/main/Siswa",
+        demoLink: "https://perpustakaan-pandhu.000webhostapp.com/login.php"
     },
     {
         title: "Discord Bot",
