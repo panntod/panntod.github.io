@@ -106,5 +106,4 @@ function renderProjects() {
     });
 }
 
-// Panggil fungsi untuk merender proyek-proyek
 renderProjects();
