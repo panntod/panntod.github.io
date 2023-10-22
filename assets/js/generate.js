@@ -80,7 +80,7 @@ function generateProjectCard(project) {
 
     card.innerHTML = `
         <i class="project-img">
-            <img src="${project.imgSrc}" alt="${project.title}" loading="lazy" />
+            <img src="${project.imgSrc}" alt="${project.title}" />
         </i>
         <div class="card__content">
             <p class="card__title">${project.title}</p>
