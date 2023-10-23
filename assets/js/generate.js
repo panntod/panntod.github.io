@@ -2,7 +2,7 @@ const projectsData = [
     {
         title: "Perpustakaan Online",
         imgSrc: "images/perpustakaanOnline.png",
-        description: "Ini adalah project yang dibuat menggunakan php...",
+        description: "Ini adalah project yang dibuat menggunakan PHP yang terhubung langsung dengan MySql, ini adalah Modul pembelajaran di SMK saya",
         buildWith: "Html5, Css3, PHP, Bootstrap, MySQL",
         hasDemo: true,
         githubLink: "https://github.com/panntod/Project-Php/tree/main/Siswa",
@@ -84,9 +84,8 @@ function generateProjectCard(project) {
         </i>
         <div class="card__content">
             <p class="card__title">${project.title}</p>
-            <p class="card__description mg-d-none"><strong>Desc:</strong> ${project.description}</p>
-            <p class="card__description mg-d-none"><strong>Build with:</strong> ${project.buildWith}</p>
-            ${project.hasDemo ? `<p class="card__description">[Sudah dibuat tampilan]</p>` : ""}
+            <p class="card__description"><strong>Desc:</strong> ${project.description}</p>
+            <p class="card__description"><strong>Build with:</strong> ${project.buildWith}</p>
             <div class="card__button">
                 <a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>
                 ${project.hasDemo ? `<a href="${project.demoLink}" class="demo">Demo</a>` : ""}

@@ -71,7 +71,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 0.625rem 1.25rem; /* Mengganti 10px dan 20px menjadi 0.625rem dan 1.25rem */
+  margin: 0.625rem 1.25rem;
   position: relative;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ nav ul li:hover::after {
   font-size: 3.5rem;
   font-weight: bold;
   color: #212121;
-  margin-bottom: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
+  margin-bottom: 1.25rem;
 }
 
 span {
@@ -467,6 +467,11 @@ span {
   .card__description {
     font-size: 0.8rem;
     line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    max-height: 3em;
   }
 
   .card__button {
