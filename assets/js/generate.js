@@ -69,8 +69,15 @@ const projectsData = [
         hasDemo: false,
         hasFigma: true,
         githubLink: "https://github.com/panntod/Munjalindra-Web",
-        demoLink: "",
         figmaLink: "https://www.figma.com/file/WimiUyAlFqnBbd5c3AXFj5/RancanganWeb?type=design&node-id=1%3A4&mode=design&t=ra3edPXnrFHmMAEY-1",
+    },
+    {
+        title: "Auction Website",
+        imgSrc: "images/auction.png",
+        description: "Website ini dibuat untuk simulasi lelang menggunakan PHP dan terkoneksi dengan MySql",
+        buildWith: "Html5, Css3, Js, Boostrap, PHP, MySql",
+        hasDemo: false,
+        githubLink: "https://github.com/DerylFeyza/Project_PHP/blob/main/bidding.php",
     },
 ];
 
