@@ -76,8 +76,9 @@ const projectsData = [
         imgSrc: "images/auction.png",
         description: "Website ini dibuat untuk simulasi lelang menggunakan PHP dan terkoneksi dengan MySql",
         buildWith: "Html5, Css3, Js, Boostrap, PHP, MySql",
-        hasDemo: false,
+        hasDemo: true,
         githubLink: "https://github.com/DerylFeyza/Project_PHP/blob/main/bidding.php",
+        demoLink: "https://auction-project-website.000webhostapp.com/home.php",
     },
 ];
 
