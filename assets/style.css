@@ -361,6 +361,10 @@ span {
   box-shadow: 0 0 2rem white;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 /* footer */
 .footer {
   margin-top: 0.5rem;
