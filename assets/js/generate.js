@@ -39,8 +39,9 @@ const projectsData = [
         imgSrc: "images/crud-web.png",
         description: "Ini adalah project yang dibuat untuk menyimpan data yang di inputkan dari form ke database.",
         buildWith: " Html5, Css3, Boostrap, Js, Ejs",
-        hasDemo: false,
+        hasDemo: true,
         githubLink: "https://github.com/panntod/Belajar-Crud-Js",
+        demoLink: "https://crud-node-js-two.vercel.app/",
     },
     {
         title: "React Tools",
