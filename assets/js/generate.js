@@ -80,6 +80,15 @@ const projectsData = [
         githubLink: "https://github.com/DerylFeyza/Project_PHP/blob/main/bidding.php",
         demoLink: "https://auction-project-website.000webhostapp.com/home.php",
     },
+    {
+        title: "Todolist OAuth Website",
+        imgSrc: "images/oauth-google.png",
+        description: "Website ini dibuat untuk belajar OAuth 2.0, untuk mengakses todolist app data akan disimpan di mongoDb",
+        buildWith: "Html5, Css3, Js, Materialize, Node.js, Express.js, MongoDb",
+        hasDemo: true,
+        githubLink: "https://github.com/panntod/Oauth-NodeJs",
+        demoLink: "https://oauth-node-js.vercel.app/",
+    },
 ];
 
 function generateProjectCard(project) {
