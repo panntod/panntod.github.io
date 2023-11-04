@@ -88,7 +88,7 @@ const projectsData = [
         buildWith: "Html5, Css3, Js, Materialize, Node.js, Express.js, MongoDb",
         hasDemo: true,
         githubLink: "https://github.com/panntod/Oauth-NodeJs",
-        demoLink: "https://oauth-node-js.vercel.app/",
+        demoLink: "https://todolist-node-js.vercel.app/",
     },
 ];
 
