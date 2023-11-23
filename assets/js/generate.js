@@ -1,5 +1,13 @@
 const projectsData = [
     {
+        title: "Portfolio Website",
+        imgSrc: "images/portfolio.png",
+        description: "Ini adalah Portfolio Website yang saya buat untuk memberi informasi dari resume pengalaman dan juga skill yang saya miliki",
+        buildWith: "Html5, Css3, JavaScript, Bootstrap",
+        hasDemo: true,
+        demoLink: "https://pandhu-munjalindra.xyz"
+    },
+    {
         title: "Perpustakaan Online",
         imgSrc: "images/perpustakaanOnline.png",
         description: "Ini adalah project yang dibuat menggunakan PHP yang terhubung langsung dengan MySql, ini adalah Modul pembelajaran di SMK saya",
@@ -105,7 +113,7 @@ function generateProjectCard(project) {
             <p class="card__description"><strong>Desc:</strong> ${project.description}</p>
             <p class="card__description"><strong>Build with:</strong> ${project.buildWith}</p>
             <div class="card__button">
-                <a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>
+                ${project.githubLink ? ` <a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>` : ""}
                 ${project.hasDemo ? `<a href="${project.demoLink}" class="demo">Demo</a>` : ""}
                 ${project.hasFigma ? `<a href="${project.figmaLink}" class="figma"><i class="bx bxl-figma"></i> Figma</a>` : ""}
             </div>
