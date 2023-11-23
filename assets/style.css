@@ -6,10 +6,24 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root{
+:root {
   --main-color: rgba(14, 14, 234, 0.9);
   --primary-color: rgba(13, 110, 253 );
   --bg-color: #eff4fd;
+  --sec-bg-color: #fff;
+  --text-color: #000; /* Tambahkan warna teks default untuk mode terang */
+  --paraf-color: #555;
+  --shadow: rgb(54, 54, 54, .5);
+}
+
+.dark-mode {
+  --main-color: rgba(14, 14, 234, 0.9);
+  --primary-color: rgba(13, 110, 253 );
+  --bg-color: #081b29; 
+  --sec-bg-color: #112e42; 
+  --text-color: #ffffff; 
+  --paraf-color: #c8c8c8;
+  --shadow: rgba(195, 195, 195, .5);
 }
 
 html {
@@ -70,6 +84,7 @@ nav {
   width: 84%;
   margin: auto;
   padding: 1.25rem 0;
+  background: var(--sec-bg-color);
   align-items: center;
   justify-content: space-between;
 }
@@ -99,11 +114,15 @@ nav ul li:hover::after {
 
 .font {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 .font:hover {
   color: var(--main-color);
+}
+
+.hamburger{
+  color: var(--text-color);
 }
 
 /* on top */
@@ -135,7 +154,7 @@ nav ul li:hover::after {
 .detel h1 {
   font-size: 3.2rem;
   font-weight: bold;
-  color: #212121;
+  color: var(--text-color);
   margin-bottom: 1.25rem;
 }
 
@@ -144,7 +163,7 @@ span {
 }
 
 .detel p {
-  color: #555;
+  color: var(--paraf-color);
   font-size: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
   line-height: 1.375rem; /* Mengganti 22px menjadi 1.375rem */
   margin-bottom: 1.875rem; /* Mengganti 30px menjadi 1.875rem */
@@ -185,7 +204,7 @@ span {
   width: max-content;
   margin-bottom: 1rem;
   font-size: 2.4rem;
-  color: #212121;
+  color: var(--shadow);
   margin: 0 10px;
 }
 
@@ -239,13 +258,12 @@ span {
   position: relative;
   width: 879px;
   height: auto;
-  background-color: #f2f2f2;
+  background-color: var(--sec-bg-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.9);
   transform-origin: bottom;
 }
 
@@ -254,8 +272,8 @@ span {
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transform: scale(1.01);
+  box-shadow: 0 8px 16px var(--shadow);
 }
 
 .card__content {
@@ -266,7 +284,7 @@ span {
   height: 100%;
   padding: 4rem;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: var(--sec-bg-color);
   transform-origin: bottom;
   transform: translateY(100%);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -278,7 +296,7 @@ span {
 
 .card__title {
   font-size: 2rem;
-  color: #333;
+  color: var(--paraf-color);
   font-weight: bold;
 }
 
@@ -289,7 +307,7 @@ span {
 .card__description {
   margin: 10px 0 0;
   font-size: 1.2rem;
-  color: #777;
+  color: var(--paraf-color);
   line-height: 1.4;
 }
 
@@ -349,21 +367,12 @@ span {
   margin: 3rem 0;
 }
 
-.contact h3 {
-  font-weight: bold;
+.contact-bg{
+  background: var(--sec-bg-color);
 }
 
 .form-container {
   gap: 10px;
-}
-
-.contact-container {
-  width: fit-content;
-  background: #ff0000;
-}
-
-.contact .mt {
-  margin-top: 1rem;
 }
 
 .tombol {
@@ -385,11 +394,10 @@ span {
 
 /* footer */
 .footer {
-  margin-top: 0.5rem;
   background-color: #fff;
   text-align: center;
   font-weight: 1rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .footer-title {
