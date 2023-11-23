@@ -24,18 +24,18 @@
   <!-- navbar -->
   <div class="section overflow-x-hidden">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1">
+      <nav class="navbar navbar-expand-lg w-100 position-fixed z-1">
         <div class="container-fluid d-flex ms-5">
           <a href="index.html" class="d-flex align-items-center text-decoration-none">
             <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
-            <h2 class="fw-bold mt-2 text-black">
+            <h2 class="fw-bold mt-2 font">
               Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
             </h2>
           </a>
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="hamburger p-1 text-black">&#8801;</span>
+            <span class="hamburger p-1">&#8801;</span>
           </button>
         </div>
         <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
@@ -49,6 +49,7 @@
             <li class="nav-item">
               <a class="nav-link fw-bold font text-center" href="#contact">CONTACT</a>
             </li>
+            <button id="darkModeToggle">Dark Mode</button>
           </ul>
         </div>
       </nav>
@@ -169,19 +170,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
 
-          <form class="bg-white shadow p-4 rounded" name="contact-form">
+          <form class="contact-bg shadow p-4 rounded" name="contact-form">
             <input type="hidden" value="boostrap" name="from" />
             <div class="mb-3">
-              <label class="form-label" for="name">Nama</label>
+              <label class="form-label font" for="name">Nama</label>
               <input class="form-control" id="name" type="text" placeholder="Nama Anda" name="name" required />
             </div>
             <div class="mb-3">
-              <label class="form-label" for="email">Email</label>
+              <label class="form-label font" for="email">Email</label>
               <input class="form-control" id="email" type="email" placeholder="Alamat Email Anda" name="email"
                 required />
             </div>
             <div class="mb-3">
-              <label class="form-label" for="message">Pesan</label>
+              <label class="form-label font" for="message">Pesan</label>
               <textarea class="form-control" id="message" placeholder="Tulis pesan Anda di sini" rows="4"
                 name="message"></textarea>
             </div>
