@@ -1,10 +1,3 @@
-const mengetik = new Typed(".typing", {
-  strings: ["Full Stack Developer", "CEO", "Web Developer", "CTO"],
-  typeSpeed: 100,
-  backSpeed: 50,
-  loop: true,
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("scrollToTop");
   const navLinks = document.querySelectorAll(".navbar-nav a");
@@ -16,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", () => {
       if (window.innerWidth < 992) {
         // Check if viewport is mobile (Bootstrap lg breakpoint)
-        navbarToggler.click(); // Tutup navbar
+        navbarToggler.click(); 
       }
     });
   });
@@ -45,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   navbarToggler.addEventListener("click", () => {
-    toggleInnerHTML(); // Panggil fungsi setiap kali navbarToggler diklik
+    toggleInnerHTML(); 
   });
 
   document.querySelector(".top-button").addEventListener("click", () => {
@@ -53,4 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("scroll", toggleButtonVisibility);
+});
+
+const mengetik = new Typed(".typing", {
+  strings: ["Full Stack Developer", "CEO", "Web Developer", "CTO", "Backend Developer"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
 });
