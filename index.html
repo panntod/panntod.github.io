@@ -56,7 +56,7 @@
 
     <!-- main -->
     <main class="hero">
-      <button class="top-button" id="scrollToTop">
+      <button class="top-button z-3" id="scrollToTop">
         <i class="bx bx-arrow-from-bottom"></i>
       </button>
       <section class="content">
@@ -70,10 +70,11 @@
             created, please give me feedback if there are some issues
           </p>
 
-          <p class="download">
+          <div class="download">
             <a href="https://docs.google.com/document/d/1g88o9RtCxGWbfBag7xpK7kt2jxS0Eix7tQdKdH_0M9Y/edit?usp=sharing"
               class="btn-primary btn">DOWNLOAD CV</a>
-          </p>
+            <a href="https://pandhu-munjalindra.xyz" class="btn-primary btn">PORTFOLIO WEB</a>
+          </div>
 
           <!-- sosmed -->
           <div class="sosmed">
@@ -172,11 +173,12 @@
             <input type="hidden" value="boostrap" name="from" />
             <div class="mb-3">
               <label class="form-label" for="name">Nama</label>
-              <input class="form-control" id="name" type="text" placeholder="Nama Anda" name="name" />
+              <input class="form-control" id="name" type="text" placeholder="Nama Anda" name="name" required />
             </div>
             <div class="mb-3">
               <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" type="email" placeholder="Alamat Email Anda" name="email" />
+              <input class="form-control" id="email" type="email" placeholder="Alamat Email Anda" name="email"
+                required />
             </div>
             <div class="mb-3">
               <label class="form-label" for="message">Pesan</label>
