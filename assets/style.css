@@ -127,7 +127,7 @@ nav ul li:hover::after {
 }
 
 .detel h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: bold;
   color: #212121;
   margin-bottom: 1.25rem;
@@ -415,7 +415,7 @@ span {
   }
 
   .detel h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #212121;
     margin-bottom: 1.25rem;
     font-weight: bold;
@@ -469,7 +469,6 @@ span {
 
   .card__description {
     font-size: 0.8rem;
-    line-height: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
