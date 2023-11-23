@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   navbarToggler.addEventListener("click", () => {
-    toggleInnerHTML(); 
+    toggleInnerHTML()
   });
 
-  document.querySelector(".top-button").addEventListener("click", () => {
+  button.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
