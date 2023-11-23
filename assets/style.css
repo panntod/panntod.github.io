@@ -6,6 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root{
+  --main-color: rgba(14, 14, 234, 0.9);
+  --primary-color: rgba(13, 110, 253 );
+  --bg-color: #eff4fd;
+}
+
 html {
   scroll-behavior: smooth;
   user-select: none;
@@ -23,7 +29,7 @@ html {
   width: 100%;
   padding-top: 3rem;
   min-height: 100vh;
-  background: #eff4fd;
+  background: var(--bg-color);
 }
 
 /* Loading */
@@ -42,7 +48,7 @@ html {
 
 .spinner {
   border: 6px solid #f3f3f3;
-  border-top: 6px solid #3498db;
+  border-top: 6px solid var(--main-color);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -80,7 +86,7 @@ nav ul li::after {
   content: "";
   height: 0.1875rem;
   width: 0;
-  background: rgba(14, 14, 234, 0.9);
+  background: var(--main-color);
   position: absolute;
   left: 0;
   bottom: -0.9375rem;
@@ -97,7 +103,7 @@ nav ul li:hover::after {
 }
 
 .font:hover {
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
 }
 
 /* on top */
@@ -106,7 +112,7 @@ nav ul li:hover::after {
   bottom: 20px;
   right: 20px;
   font-size: 1.6rem;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 0.5rem 0.9rem;
   border: none;
@@ -134,7 +140,7 @@ nav ul li:hover::after {
 }
 
 span {
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
 }
 
 .detel p {
@@ -145,7 +151,7 @@ span {
 }
 
 .download a {
-  padding: 1.3rem 3.75rem; /* Mengganti 15px dan 30px menjadi 1.875rem dan 3.75rem */
+  padding: 1rem 2.2rem; /* Mengganti 15px dan 30px menjadi 1.875rem dan 3.75rem */
   text-decoration: none;
   transition: 0.5s;
   font-weight: bold;
@@ -155,11 +161,24 @@ span {
   margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
 }
 
+.download a:nth-child(2) {
+  transition: 0.5s;
+  background: #fff;
+  color: var(--main-color);
+  border-radius: 2em;
+  margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
+}
+
 .download a:hover {
   background: #fff;
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
   border-radius: 1.5rem;
-  box-shadow: 0 0 2rem white;
+}
+
+.download a:nth-child(2):hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 1.5rem;
 }
 
 .sosmed-icon {
@@ -171,7 +190,7 @@ span {
 }
 
 .sosmed-icon:hover i {
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
 }
 
 /* projects */
@@ -180,7 +199,7 @@ span {
   position: relative;
   font-size: 2rem;
   font-weight: bold;
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
   margin: 2rem 0;
   text-align: center;
 }
@@ -194,12 +213,12 @@ span {
   right: 0;
   margin: auto;
   top: 3rem;
-  background-color: rgba(14, 14, 234, 0.9);
+  background-color: var(--main-color);
 }
 
 .projects {
   min-height: 100vh;
-  background: #eff4fd;
+  background: var(--bg-color);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -291,7 +310,7 @@ span {
 }
 
 .demo {
-  background: #007bff;
+  background: var(--primary-color);
 }
 
 .figma {
@@ -340,7 +359,7 @@ span {
 
 .contact-container {
   width: fit-content;
-  background: red;
+  background: #ff0000;
 }
 
 .contact .mt {
@@ -355,7 +374,7 @@ span {
 
 .tombol:hover {
   background: #fff;
-  color: rgba(14, 14, 234, 0.9);
+  color: var(--main-color);
   border-radius: 1.5rem;
   box-shadow: 0 0 2rem white;
 }
