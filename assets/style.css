@@ -294,7 +294,7 @@ span {
   width: max-content;
   margin-bottom: 1rem;
   font-size: 2.4rem;
-  color: var(--shadow);
+  color: var(--paraf-color);
   margin: 0 10px;
 }
 
@@ -533,7 +533,7 @@ span {
 
   .detel h1 {
     font-size: 1.8rem;
-    color: #212121;
+    color: var(--text-color);
     margin-bottom: 1.25rem;
     font-weight: bold;
   }
@@ -549,7 +549,7 @@ span {
   .sosmed-icon {
     margin-bottom: 1rem;
     font-size: 2rem;
-    color: #212121;
+    color: var(--paraf-color);
     margin: 15px;
   }
 
