@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", () => {
       if (window.innerWidth < 992) {
         // Check if viewport is mobile (Bootstrap lg breakpoint)
-        navbarToggler.click(); 
+        navbarToggler.click();
       }
     });
   });
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   navbarToggler.addEventListener("click", () => {
-    toggleInnerHTML()
+    toggleInnerHTML();
   });
 
   button.addEventListener("click", () => {
@@ -48,10 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", toggleButtonVisibility);
 });
 
-let mengetik; 
-if (typeof Typed === 'function') {
+let mengetik;
+if (typeof Typed === "function") {
   mengetik = new Typed(".typing", {
-    strings: ["Full Stack Developer", "CEO", "Web Developer", "CTO", "Backend Developer"],
+    strings: [
+      "Full Stack Developer",
+      "CEO",
+      "Web Developer",
+      "CTO",
+      "Backend Developer",
+    ],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true,
@@ -61,19 +67,20 @@ if (typeof Typed === 'function') {
 }
 
 // Ambil tombol dan tambahkan event listener
-const darkModeToggle = document.getElementById('darkModeToggle');
+const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
 
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
+darkModeToggle.addEventListener("change", () => {
+  body.classList.toggle("dark-mode");
 
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('darkMode', 'enabled');
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("darkMode", "enabled");
   } else {
-    localStorage.removeItem('darkMode');
+    localStorage.removeItem("darkMode");
   }
 });
 
-if (localStorage.getItem('darkMode') === 'enabled') {
-  body.classList.add('dark-mode');
+if (localStorage.getItem("darkMode") === "enabled") {
+  body.classList.add("dark-mode");
+  darkModeToggle.checked = true;
 }
