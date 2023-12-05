@@ -99,6 +99,14 @@ const projectsData = [
         githubLink: "https://github.com/panntod/Oauth-NodeJs",
         demoLink: "https://todolist-node-js.vercel.app/",
     },
+    {
+        title: "MERN App",
+        imgSrc: "images/mern-app.png",
+        description: "Ini adalah website MERN (Mongo, Express, React, Node), mengimplementasikan sistem crud didalam nya dan terdapat sistem login",
+        buildWith: "Html5, Css3, React, Vite , Node, Express, MongoDb",
+        hasDemo: false,
+        githubLink: "https://github.com/panntod/MERN-Frontend",
+    },
 ];
 
 function generateProjectCard(project) {
