@@ -256,37 +256,37 @@ span {
   color: var(--paraf-color);
   font-size: 1.25rem; /* Mengganti 20px menjadi 1.25rem */
   line-height: 1.375rem; /* Mengganti 22px menjadi 1.375rem */
-  margin-bottom: 1.875rem; /* Mengganti 30px menjadi 1.875rem */
+  margin-bottom: 1.875rem; 
 }
 
 .download a {
-  padding: 1rem 2.2rem; /* Mengganti 15px dan 30px menjadi 1.875rem dan 3.75rem */
+  padding: 1rem 2.2rem; 
   text-decoration: none;
   transition: 0.5s;
   font-weight: bold;
-  color: #fff;
+  color: var(--sec-bg-color);
   display: inline-block;
-  border-radius: 2em; /* Mengganti 10px menjadi 1rem */
-  margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
+  border-radius: 2em; 
+  margin: 1.875rem 0;
 }
 
 .download a:nth-child(2) {
   transition: 0.5s;
-  background: #fff;
+  background: var(--sec-bg-color);
   color: var(--main-color);
   border-radius: 2em;
-  margin: 1.875rem 0; /* Mengganti 30px menjadi 1.875rem */
+  margin: 1.875rem 0; 
 }
 
 .download a:hover {
-  background: #fff;
+  background: var(--sec-bg-color);
   color: var(--main-color);
   border-radius: 1.5rem;
 }
 
 .download a:nth-child(2):hover {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--sec-bg-color);
   border-radius: 1.5rem;
 }
 
@@ -484,21 +484,21 @@ span {
 
 /* footer */
 .footer {
-  background-color: #fff;
+  background-color: var(--sec-bg-color);
   text-align: center;
   font-weight: 1rem;
   padding: 1rem 0;
 }
 
 .footer-title {
-  color: #212121;
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .footer-subtitle {
-  color: #212121;
+  color: var(--text-color);
   font-size: 0.8rem;
   margin: 0 2rem;
 }
@@ -510,6 +510,7 @@ span {
 
 .footer-copy {
   font-size: 0.8rem;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
