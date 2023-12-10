@@ -68,7 +68,7 @@ const projectsData = [
         hasDemo: true,
         hasFigma: false,
         githubLink: "https://github.com/panntod/Web-Sederhana",
-        demoLink: "https://matematika-sederhana.vercel.app/home",
+        demoLink: "https://matematika-sederhana.vercel.app/home.html",
     },
     {
         title: "Munjalindra Website",
