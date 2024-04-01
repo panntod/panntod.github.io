@@ -12,9 +12,7 @@ const projectsData = [
         imgSrc: "images/perpustakaanOnline.png",
         description: "Ini adalah project yang dibuat menggunakan PHP yang terhubung langsung dengan MySql, ini adalah Modul pembelajaran di SMK saya",
         buildWith: "Html5, Css3, PHP, Bootstrap, MySQL",
-        hasDemo: true,
-        githubLink: "https://github.com/panntod/Project-Php/tree/main/Siswa",
-        demoLink: "https://perpustakaan-pandhu.000webhostapp.com/login.php"
+        githubLink: "https://github.com/panntod/Perpustakaan-PHP",
     },
     {
         title: "Discord Bot",
@@ -30,7 +28,7 @@ const projectsData = [
         description: "Ini adalah project pertama kali yang saya buat, yang berisi database untuk menyimpan data dari setiap aktifitas yang dilakukan diweb ini",
         buildWith: "Html5, Css3, PHP, Bootstrap, MySQL",
         hasDemo: true,
-        githubLink: "https://github.com/panntod/Project-Php/tree/main/kantin-app",
+        githubLink: "https://github.com/panntod/Kantin-Php",
         demoLink: "https://kantin-pandhu.000webhostapp.com/login.php",
     },
     {
