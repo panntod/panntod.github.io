@@ -119,9 +119,9 @@ function generateProjectCard(project) {
         </i>
         <div class="card__content">
             <p class="card__title">${project.title}</p>
-            <p class="card__description"><strong>Desc:</strong> ${project.description}</p>
-            <p class="card__description"><strong>Build with:</strong> ${project.buildWith}</p>
-            <div class="card__button">
+            <p class="card-description"><strong>Desc:</strong> ${project.description}</p>
+            <p class="card-description"><strong>Build with:</strong> ${project.buildWith}</p>
+            <div class="card-button">
                 ${project.githubLink ? ` <a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>` : ""}
                 ${project.hasDemo ? `<a href="${project.demoLink}" class="demo"><i class="bx bx-link-alt"></i>  Demo</a>` : ""}
                 ${project.hasFigma ? `<a href="${project.figmaLink}" class="figma"><i class="bx bxl-figma"></i> Figma</a>` : ""}
