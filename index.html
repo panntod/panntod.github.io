@@ -22,27 +22,27 @@
   </div>
 
   <!-- navbar -->
-  <div class="section">
-    <header class="d-flex w-100 justify-content-center align-items-center position-fixed z-1 header-bg">
-      <div class="mt-4 w-50">
-        <ul class="nav nav-pills nav-fill gap-2 p-2 small bg-primary rounded-5 shadow-lg" id="pillNav2" role="tablist"
-          style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-          <li class="nav-item" role="presentation">
-            <button onclick="navigate('')" class="nav-link active rounded-5 header-text" id="home-tab2" data-bs-toggle="tab" type="button"
-              role="tab" aria-selected="true">Home</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button onclick="navigate('projects')" class="nav-link rounded-5 header-text" id="profile-tab2" data-bs-toggle="tab" type="button"
-              role="tab" aria-selected="false">Project</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button onclick="navigate('contact')" class="nav-link rounded-5 header-text" id="contact-tab2" data-bs-toggle="tab" type="button"
-              role="tab" aria-selected="false">Contact</button>
-          </li>
-        </ul>
-      </div>
-    </header>    
+  <header class="d-flex w-100 justify-content-center align-items-center position-fixed z-1 header-bg">
+    <div class="mt-4 nav-width">
+      <ul class="nav nav-pills nav-fill gap-2 p-2 small bg-primary rounded-5 shadow-lg" id="pillNav2" role="tablist"
+        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item" role="presentation">
+          <button onclick="navigate('')" class="nav-link active rounded-5 header-text" id="home-tab2"
+            data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button onclick="navigate('projects')" class="nav-link rounded-5 header-text" id="profile-tab2"
+            data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Project</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button onclick="navigate('contact')" class="nav-link rounded-5 header-text" id="contact-tab2"
+            data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+    </div>
+  </header>
 
+  <div class="section">
     <!-- main -->
     <main class="hero">
       <section class="content">
@@ -202,7 +202,7 @@
       </div>
 
       <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
-      
+
       <label class="ui-switch d-flex align-items-center justify-content-center">
         <input type="checkbox" id="darkModeToggle">
         <div class="slider">
