@@ -50,15 +50,6 @@ html {
   background: var(--bg-color);
 }
 
-/* Navbar */
-.header-text {
-  color: var(--bg-color);
-}
-
-.nav-link:hover{
-  background: #dae0e5;
-}
-
 /* Loading */
 .loading {
   position: fixed;
@@ -96,7 +87,23 @@ html {
 }
 
 /* Navbar */
+.header-text {
+  color: var(--bg-color);
+}
 
+.nav-link:hover{
+  background: #dae0e5;
+}
+
+.nav-width{
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-width{
+    width: 75%;
+  }
+}
 .ui-switch {
   --switch-bg: rgb(135, 150, 165);
   --switch-width: 48px;
