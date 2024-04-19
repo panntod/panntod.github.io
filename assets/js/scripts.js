@@ -20,6 +20,10 @@ function navigate(path) {
   window.location.href = "#" + path;
 }
 
+function navigateHome() {
+  window.location.href = "/";
+}
+
 // Ambil tombol dan tambahkan event listener
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
