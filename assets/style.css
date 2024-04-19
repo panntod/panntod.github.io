@@ -86,12 +86,17 @@ html {
 /* Navbar */
 nav {
   display: flex;
-  width: 84%;
+  width: 100%;
   margin: auto;
   padding: 1.25rem 0;
-  background: var(--sec-bg-color);
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
+}
+
+.nav-bg {
+  background-color: transparent;
+  backdrop-filter: blur(40px); 
 }
 
 nav ul li {
