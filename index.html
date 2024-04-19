@@ -24,8 +24,7 @@
   <!-- navbar -->
   <header class="d-flex w-100 justify-content-center align-items-center position-fixed z-1 header-bg">
     <div class="mt-4 nav-width">
-      <ul class="nav nav-pills nav-fill gap-2 p-2 small bg-primary rounded-5 shadow-lg" id="pillNav2" role="tablist"
-        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+      <ul class="nav nav-pills nav-fill gap-2 p-2 small bg-primary rounded-5 shadow-lg nav-container" id="pillNav2" role="tablist">
         <li class="nav-item" role="presentation">
           <button onclick="navigate('')" class="nav-link active rounded-5 header-text" id="home-tab2"
             data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
@@ -185,34 +184,34 @@
         </div>
       </section>
     </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <p class="footer-title">Based In</p>
-      <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
-
-      <!-- Sosmed -->
-      <div class="footer-social">
-        <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
-
-      <label class="ui-switch d-flex align-items-center justify-content-center">
-        <input type="checkbox" id="darkModeToggle">
-        <div class="slider">
-          <div class="circle"></div>
-        </div>
-      </label>
-
-    </footer>
   </div>
+  
+  <!-- footer -->
+  <footer class="footer">
+    <p class="footer-title">Based In</p>
+    <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
 
+    <!-- Sosmed -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
+      <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+    </div>
+
+    <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
+
+    <label class="ui-switch d-flex align-items-center justify-content-center">
+      <input type="checkbox" id="darkModeToggle">
+      <div class="slider">
+        <div class="circle"></div>
+      </div>
+    </label>
+
+  </footer>
+  
   <script>
     window.addEventListener("load", () => {
       document.querySelector(".loading").style.display = "none";
