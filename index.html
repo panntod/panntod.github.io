@@ -22,49 +22,29 @@
   </div>
 
   <!-- navbar -->
-  <div class="section overflow-x-hidden">
-    <header>
-      <nav class="navbar navbar-expand-lg w-100 position-fixed z-1">
-        <div class="container-fluid d-flex ms-5">
-          <a href="/" class="d-flex align-items-center text-decoration-none">
-            <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
-            <h2 class="fw-bold mt-2 font">
-              Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
-            </h2>
-          </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="hamburger p-1">&#8801;</span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="#contact">CONTACT</a>
-            </li>
-            <label class="ui-switch d-flex align-items-center justify-content-center">
-              <input type="checkbox" id="darkModeToggle">
-              <div class="slider">
-                <div class="circle"></div>
-              </div>
-            </label>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <div class="section">
+    <header class="d-flex w-100 justify-content-center align-items-center position-fixed z-1 header-bg">
+      <div class="mt-4 w-50">
+        <ul class="nav nav-pills nav-fill gap-2 p-2 small bg-primary rounded-5 shadow-lg" id="pillNav2" role="tablist"
+          style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+          <li class="nav-item" role="presentation">
+            <button onclick="navigate('')" class="nav-link active rounded-5 header-text" id="home-tab2" data-bs-toggle="tab" type="button"
+              role="tab" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button onclick="navigate('projects')" class="nav-link rounded-5 header-text" id="profile-tab2" data-bs-toggle="tab" type="button"
+              role="tab" aria-selected="false">Project</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button onclick="navigate('contact')" class="nav-link rounded-5 header-text" id="contact-tab2" data-bs-toggle="tab" type="button"
+              role="tab" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+      </div>
+    </header>    
 
     <!-- main -->
     <main class="hero">
-      <button class="top-button z-3" id="scrollToTop">
-        <i class="bx bx-arrow-from-bottom"></i>
-      </button>
       <section class="content">
         <div class="detail col-lg-6">
           <h1 class="mengetik">
@@ -164,8 +144,8 @@
           <div class="see-more">
             <a href="project">See More <i class="bx bx-right-arrow-alt"></i></a>
           </div>
-        </div> 
-      <!-- End container project -->
+        </div>
+        <!-- End container project -->
 
       </section>
 
@@ -181,12 +161,13 @@
           <form class="contact-bg shadow p-4 rounded" name="contact-form">
             <div class="mb-3">
               <label class="form-label font" for="name">Nama</label>
-              <input class="form-control form-input" id="name" type="text" placeholder="Nama Anda" name="name" required />
+              <input class="form-control form-input" id="name" type="text" placeholder="Nama Anda" name="name"
+                required />
             </div>
             <div class="mb-3">
               <label class="form-label font" for="email">Email</label>
-              <input class="form-control form-input" id="email" type="email" placeholder="Alamat Email Anda" name="email"
-                required />
+              <input class="form-control form-input" id="email" type="email" placeholder="Alamat Email Anda"
+                name="email" required />
             </div>
             <div class="mb-3">
               <label class="form-label font" for="message">Pesan</label>
@@ -221,6 +202,14 @@
       </div>
 
       <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
+      
+      <label class="ui-switch d-flex align-items-center justify-content-center">
+        <input type="checkbox" id="darkModeToggle">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+
     </footer>
   </div>
 
