@@ -115,8 +115,8 @@ function generateProjectCard(project) {
         <i class="project-img">
             <img src="${project.imgSrc}" alt="${project.title}" />
         </i>
-        <div class="card__content">
-            <p class="card__title">${project.title}</p>
+        <div class="card-content">
+            <p class="card-title">${project.title}</p>
             <p class="card-description"><strong>Desc:</strong> ${project.description}</p>
             <p class="card-description"><strong>Build with:</strong> ${project.buildWith}</p>
             <div class="card-button">
