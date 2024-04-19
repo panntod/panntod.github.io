@@ -91,16 +91,22 @@ html {
   color: var(--bg-color);
 }
 
-.nav-link:hover{
-  background: #dae0e5;
+.nav-link:hover {
+  background: var(--sec-bg-color);
 }
 
-.nav-width{
+.nav-width {
   width: 50%;
 }
 
+.nav-container {
+  --bs-nav-link-color: var(--bg-color);
+  --bs-nav-pills-link-active-color: var(--bs-primary);
+  --bs-nav-pills-link-active-bg: var(--bg-color);
+}
+
 @media screen and (max-width: 768px) {
-  .nav-width{
+  .nav-width {
     width: 75%;
   }
 }
@@ -492,11 +498,6 @@ span {
 
   .detail {
     margin: 8%;
-  }
-
-  .top-button {
-    font-size: 1rem;
-    padding: 0.5rem 0.8rem;
   }
 
   .ms-5 {
