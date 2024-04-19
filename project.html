@@ -2,105 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Pandhu Arya Munjalindra">
-    <meta name="keywords" content="Pandhu Arya Munjalindra, Portofolio Web, Project Web">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Web</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Pandhu Arya Munjalindra">
+  <meta name="keywords" content="Pandhu Arya Munjalindra, Portofolio Web, Project Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Web</title>
 
-    <link href="images/icon-pandhu.svg" rel="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/style.css" />
+  <link href="images/icon-pandhu.svg" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-    <!-- Loading Animation -->
-    <div class="loading">
-        <div class="spinner"></div>
+  <!-- Loading Animation -->
+  <div class="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-bg navbar navbar-expand-lg position-fixed">
+      <div class="container-fluid d-flex ms-5">
+        <a href="/" class="d-flex align-items-center text-decoration-none">
+          <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
+          <h2 class="fw-bold mt-2 font">
+            Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
+          </h2>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger p-1">&#8801;</span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="/#contact">CONTACT</a>
+          </li>
+          <label class="ui-switch d-flex align-items-center justify-content-center">
+            <input type="checkbox" id="darkModeToggle">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section">
+    <button class="top-button z-3" id="scrollToTop">
+      <i class="bx bx-arrow-from-bottom"></i>
+    </button>
+    <!-- project -->
+    <section class="projects" id="projects">
+      <div style="margin-top: 3.8rem;">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="project-container bd-grid" id="project-container">
+        <!-- Dynamic content will be inserted here -->
+      </div>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p class="footer-title">Based In</p>
+    <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
+
+    <!-- Sosmed -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
+      <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
+        <i class="bx bxl-linkedin"></i>
+      </a>
     </div>
 
-    <!-- navbar -->
-    <div class="section overflow-x-hidden">
-        <header>
-            <nav class="navbar navbar-expand-lg w-100 position-fixed z-1">
-              <div class="container-fluid d-flex ms-5">
-                <a href="/" class="d-flex align-items-center text-decoration-none">
-                  <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
-                  <h2 class="fw-bold mt-2 font">
-                    Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
-                  </h2>
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="hamburger p-1">&#8801;</span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold font text-center" href="/">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fw-bold font text-center" href="/#contact">CONTACT</a>
-                  </li>
-                  <label class="ui-switch d-flex align-items-center justify-content-center">
-                    <input type="checkbox" id="darkModeToggle">
-                    <div class="slider">
-                      <div class="circle"></div>
-                    </div>
-                  </label>
-                </ul>
-              </div>
-            </nav>
-          </header>
+    <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
+  </footer>
 
-        <!-- project -->
-        <section class="projects" id="projects" style="margin-top: 3.8rem;">
-            <button class="top-button z-3" id="scrollToTop">
-                <i class="bx bx-arrow-from-bottom"></i>
-            </button>
-            <h2 class="section-title">Projects</h2>
-            <div class="project-container bd-grid" id="project-container">
-                <!-- Dynamic content will be inserted here -->
-            </div>
-        </section>
-
-        <!-- footer -->
-        <footer class="footer">
-            <p class="footer-title">Based In</p>
-            <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
-
-            <!-- Sosmed -->
-            <div class="footer-social">
-                <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
-                <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i
-                        class="bx bxl-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-            </div>
-
-            <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
-        </footer>
-    </div>
-
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".loading").style.display = "none";
-        });
-    </script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/generate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".loading").style.display = "none";
+    });
+  </script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/generate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -21,45 +21,45 @@
     <div class="spinner"></div>
   </div>
 
-  <!-- navbar -->
-  <div class="section overflow-x-hidden">
-    <header>
-      <nav class="navbar navbar-expand-lg w-100 position-fixed z-1">
-        <div class="container-fluid d-flex ms-5">
-          <a href="/" class="d-flex align-items-center text-decoration-none">
-            <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
-            <h2 class="fw-bold mt-2 font">
-              Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
-            </h2>
-          </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="hamburger p-1">&#8801;</span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold font text-center" href="#contact">CONTACT</a>
-            </li>
-            <label class="ui-switch d-flex align-items-center justify-content-center">
-              <input type="checkbox" id="darkModeToggle">
-              <div class="slider">
-                <div class="circle"></div>
-              </div>
-            </label>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <header>
+    <nav class="nav-bg navbar navbar-expand-lg position-fixed">
+      <div class="container-fluid d-flex ms-5">
+        <a href="/" class="d-flex align-items-center text-decoration-none">
+          <img src="images/icon-pandhu.svg" class="me-3" width="30px" height="auto" alt="logo" />
+          <h2 class="fw-bold mt-2 font">
+            Pandhu<span style="color: rgba(14, 14, 234, 0.9)">.</span>
+          </h2>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger p-1">&#8801;</span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold font text-center" href="#contact">CONTACT</a>
+          </li>
+          <label class="ui-switch d-flex align-items-center justify-content-center">
+            <input type="checkbox" id="darkModeToggle">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <!-- navbar -->
+  <div class="section">
     <!-- main -->
     <main class="hero">
       <button class="top-button z-3" id="scrollToTop">
@@ -164,8 +164,8 @@
           <div class="see-more">
             <a href="project">See More <i class="bx bx-right-arrow-alt"></i></a>
           </div>
-        </div> 
-      <!-- End container project -->
+        </div>
+        <!-- End container project -->
 
       </section>
 
@@ -181,12 +181,13 @@
           <form class="contact-bg shadow p-4 rounded" name="contact-form">
             <div class="mb-3">
               <label class="form-label font" for="name">Nama</label>
-              <input class="form-control form-input" id="name" type="text" placeholder="Nama Anda" name="name" required />
+              <input class="form-control form-input" id="name" type="text" placeholder="Nama Anda" name="name"
+                required />
             </div>
             <div class="mb-3">
               <label class="form-label font" for="email">Email</label>
-              <input class="form-control form-input" id="email" type="email" placeholder="Alamat Email Anda" name="email"
-                required />
+              <input class="form-control form-input" id="email" type="email" placeholder="Alamat Email Anda"
+                name="email" required />
             </div>
             <div class="mb-3">
               <label class="form-label font" for="message">Pesan</label>
@@ -204,25 +205,25 @@
         </div>
       </section>
     </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <p class="footer-title">Based In</p>
-      <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
-
-      <!-- Sosmed -->
-      <div class="footer-social">
-        <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
-    </footer>
   </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p class="footer-title">Based In</p>
+    <p class="footer-subtitle">Malang, Jawa Timur, Indonesia</p>
+
+    <!-- Sosmed -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/pandhuu.id" class="sosmed-icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://github.com/panntod" class="sosmed-icon"><i class="bx bxl-github"></i></a>
+      <a href="https://www.facebook.com/pandhu.munjalindra" class="sosmed-icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/pandhu-arya/" class="sosmed-icon">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+    </div>
+
+    <p class="footer-copy">&copy; 2023 Pandhu Arya</p>
+  </footer>
 
   <script>
     window.addEventListener("load", () => {
