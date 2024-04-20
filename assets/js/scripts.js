@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", toggleButtonVisibility);
 });
 
+// Untuk menjalankan animasi mengetik
 let mengetik;
 if (typeof Typed === "function") {
   mengetik = new Typed(".typing", {

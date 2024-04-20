@@ -142,16 +142,19 @@ function generateProjectCard(project) {
             }</p>
             <div class="card-button">
                 ${
-                  project.githubLink ?
-                  `<a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>` : ""
+                  project.githubLink
+                    ? `<a href="${project.githubLink}" class="github"><i class="bx bxl-github"></i> Github</a>`
+                    : ""
                 }
                 ${
-                  project.demoLink ?
-                  `<a href="${project.demoLink}" class="demo"><i class="bx bx-link-alt"></i> Demo</a>` : ""
+                  project.demoLink
+                    ? `<a href="${project.demoLink}" class="demo"><i class="bx bx-link-alt"></i> Demo</a>`
+                    : ""
                 }
                 ${
-                  project.figmaLink ?
-                  `<a href="${project.figmaLink}" class="figma"><i class="bx bxl-figma"></i> Figma</a>` : ""
+                  project.figmaLink
+                    ? `<a href="${project.figmaLink}" class="figma"><i class="bx bxl-figma"></i> Figma</a>`
+                    : ""
                 }
             </div>
         </div>

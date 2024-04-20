@@ -84,6 +84,7 @@ html {
 }
 
 /* Navbar */
+
 nav {
   display: flex;
   width: 100%;
@@ -135,7 +136,8 @@ nav ul li:hover::after {
   color: var(--text-color);
 }
 
-/* on top */
+/* Button Scroll To Top */
+
 .top-button {
   position: fixed;
   bottom: 20px;
@@ -149,6 +151,8 @@ nav ul li:hover::after {
   cursor: pointer;
   display: none;
 }
+
+/* Toggle Dark Mode */
 
 .ui-switch {
   --switch-bg: rgb(135, 150, 165);
@@ -219,7 +223,7 @@ nav ul li:hover::after {
   opacity: 0;
 }
 
-/* actions */
+/* Actions */
 
 .ui-switch input:checked + .slider .circle {
   left: calc(100% - var(--circle-diameter));
@@ -307,7 +311,7 @@ span {
   color: var(--main-color);
 }
 
-/* projects */
+/* Projects */
 
 .section-title {
   position: relative;
@@ -347,7 +351,7 @@ span {
   border-radius: 0.5rem;
 }
 
-/* card */
+/* Card */
 
 .card {
   position: relative;
@@ -418,6 +422,8 @@ span {
   color: #fff;
 }
 
+/* Card Sosmed */
+
 .github {
   background: #333;
 }
@@ -442,7 +448,8 @@ span {
   margin: 0 1rem;
 }
 
-/* see more */
+/* Link See More */
+
 .see-more {
   display: flex;
   justify-content: end;
@@ -457,7 +464,8 @@ span {
   text-decoration: underline;
 }
 
-/* contact */
+/* Contact */
+
 .contact {
   margin: 3rem 0;
 }
@@ -498,7 +506,8 @@ span {
   color: var(--text-color)
 }
 
-/* footer */
+/* Footer */
+
 .footer {
   background-color: var(--sec-bg-color);
   text-align: center;
@@ -588,7 +597,8 @@ span {
     font-size: 0.7rem;
   }
 
-  /* card */
+  /* Card */
+  
   .card {
     width: auto;
     height: calc(auto + 30px);
