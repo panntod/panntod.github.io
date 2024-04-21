@@ -5,7 +5,7 @@ const projectsData = [
     description:
       "Ini adalah Portfolio Website yang saya buat untuk memberi informasi dari resume pengalaman dan juga skill yang saya miliki",
     buildWith: "Html5, Css3, JavaScript, Bootstrap",
-    demoLink: "https://pandhu-munjalindra.xyz",
+    demoLink: "https://panntod.github.io/Portfolio-Web/",
   },
   {
     title: "Perpustakaan Online",
