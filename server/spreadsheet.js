@@ -12,14 +12,14 @@ form.addEventListener("submit", (e) => {
   tombolKirim.classList.toggle("d-none");
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
+    .then((_) => {
       tombolLoading.classList.toggle("d-none");
       tombolKirim.classList.toggle("d-none");
       alert.classList.toggle("d-none");
 
       form.reset();
-      console.log("Success!", response);
     })
-    .catch((error) => console.error("Error!", error.message));
+    .catch((_) => {
+      window.alert("Error! Gagal mengirim pesan.");
+    });
 });
-      
