@@ -15,9 +15,10 @@
   --primary-color: rgba(13, 110, 253);
   --bg-color: #eff4fd;
   --sec-bg-color: #fff;
-  --text-color: #000; 
+  --text-color: #000;
   --paraf-color: #555;
   --shadow: rgb(54, 54, 54, 0.5);
+  --card-background: rgb(255, 255, 255, 0.6);
 }
 
 .dark-mode {
@@ -28,6 +29,7 @@
   --text-color: #ffffff;
   --paraf-color: #c8c8c8;
   --shadow: rgba(195, 195, 195, 0.5);
+  --card-background: rgb(0, 0, 0, 0.6);
 }
 
 html {
@@ -57,8 +59,11 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Gradient transparan */
-              rgba(81, 81, 81, 0.8); /* Warna latar belakang */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    /* Gradient transparan */ rgba(81, 81, 81, 0.8); /* Warna latar belakang */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +102,7 @@ nav {
 
 .nav-bg {
   background-color: transparent;
-  backdrop-filter: blur(40px); 
+  backdrop-filter: blur(40px);
 }
 
 nav ul li {
@@ -265,17 +270,17 @@ span {
   color: var(--paraf-color);
   font-size: 1.25rem;
   line-height: 1.375rem;
-  margin-bottom: 1.875rem; 
+  margin-bottom: 1.875rem;
 }
 
 .download a {
-  padding: 1rem 2.2rem; 
+  padding: 1rem 2.2rem;
   text-decoration: none;
   transition: 0.5s;
   font-weight: bold;
   color: var(--sec-bg-color);
   display: inline-block;
-  border-radius: 2em; 
+  border-radius: 2em;
   margin: 1.875rem 0;
 }
 
@@ -284,7 +289,7 @@ span {
   background: var(--sec-bg-color);
   color: var(--main-color);
   border-radius: 2em;
-  margin: 1.875rem 0; 
+  margin: 1.875rem 0;
 }
 
 .download a:hover {
@@ -367,12 +372,14 @@ span {
 }
 
 .card img {
+  height: auto;
   width: auto;
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
   box-shadow: 0 8px 16px var(--shadow);
+  transition: all 0.8s ease;
 }
 
 .card-content {
@@ -383,10 +390,10 @@ span {
   height: 100%;
   padding: 4rem;
   box-sizing: border-box;
-  background-color: var(--sec-bg-color);
+  background-color: var(--card-background);
   transform-origin: bottom;
   transform: translateY(100%);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
 .card:hover .card-content {
@@ -400,7 +407,7 @@ span {
 }
 
 .card:hover img {
-  scale: 0;
+  opacity: 0.6;
 }
 
 .card-description {
@@ -491,19 +498,19 @@ span {
   box-shadow: 0 0 2rem white;
 }
 
-.form-input{
+.form-input {
   background-color: var(--bg-color);
   border: 1px var(--paraf-color);
-  color: var(--text-color) !important
+  color: var(--text-color) !important;
 }
 
-.form-input:focus{
+.form-input:focus {
   background-color: var(--bg-color);
   border: 2px var(--text-color);
 }
 
 .form-input::placeholder {
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 /* Footer */
@@ -598,7 +605,7 @@ span {
   }
 
   /* Card */
-  
+
   .card {
     width: auto;
     height: calc(auto + 30px);
