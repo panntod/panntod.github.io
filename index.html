@@ -3,17 +3,44 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="Pandhu Arya Munjalindra">
-  <meta name="keywords" content="Pandhu Arya Munjalindra, Portofolio Web, Project Web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Web</title>
 
-  <link href="assets/images/icon-pandhu.svg" rel="icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- SEO Essentials -->
+  <meta name="author" content="Pandhu Arya Munjalindra">
+  <meta name="description"
+    content="This is my official personal site showcasing my web development projects. Feel free to provide feedback!" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Pandhu Arya | Web Developer Portfolio" />
+  <meta property="og:description" content="Explore my web development projects and get in touch for collaborations!" />
+  <meta property="og:image" content="https://pandhuarya.my.id/assets/images/preview.png" />
+  <meta property="og:url" content="https://pandhuarya.my.id/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pandhu Arya" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pandhu Arya | Web Developer Portfolio" />
+  <meta name="twitter:description" content="Explore my web development projects and get in touch for collaborations!" />
+  <meta name="twitter:image" content="https://pandhuarya.my.id/assets/images/preview.png" />
+  <meta name="twitter:site" content="@your_twitter_handle" />
+
+  <!-- Mobile & Web App Optimization -->
+  <meta name="theme-color" content="#0e0eea" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Pandhu Arya" />
+  <meta name="application-name" content="Pandhu Arya" />
+
+  <!-- Favicon & Styles -->
+  <title>Personal Web</title>
+  <link rel="icon" href="assets/images/icon-pandhu.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 
 <body>
   <!-- Loading Animation -->
@@ -39,13 +66,13 @@
       <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link fw-bold font text-center" href="/">HOME</a>
+            <a class="nav-link fw-bold font text-center" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold font text-center" href="#projects">PROJECT</a>
+            <a class="nav-link fw-bold font text-center" href="#projects">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold font text-center" href="#contact">CONTACT</a>
+            <a class="nav-link fw-bold font text-center" href="#contact">Contact</a>
           </li>
           <label class="ui-switch d-flex align-items-center justify-content-center">
             <input type="checkbox" id="darkModeToggle">
@@ -69,7 +96,7 @@
         <div class="detail col-lg-6">
           <h1 class="mengetik">
             Hi I'm Pandhu Arya <br />
-            a <span class="typing"></span>
+            a <span id="typed-text" class="typing"></span>
           </h1>
           <p>
             This is my official personal site to show all details of my web development projects that have been
@@ -77,8 +104,8 @@
           </p>
 
           <div class="download">
-            <a href="https://docs.google.com/document/d/1g88o9RtCxGWbfBag7xpK7kt2jxS0Eix7tQdKdH_0M9Y/edit?usp=sharing"
-              class="btn-primary btn">SEE CV</a>
+            <a download="Pandhu Arya - CV" href="assets/CV-Pandhu-Arya.pdf" class="btn-primary btn">DOWNLOAD
+              CV</a>
             <a href="https://pandhuarya.my.id" class="btn-primary btn">PORTFOLIO WEB</a>
           </div>
 
@@ -227,7 +254,6 @@
       document.querySelector(".loading").style.display = "none";
     });
   </script>
-  <script src="assets/js/type.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="./server/spreadsheet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
