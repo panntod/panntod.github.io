@@ -105,9 +105,16 @@ nav {
   backdrop-filter: blur(40px);
 }
 
+.nav-bg ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
 nav ul li {
   display: inline-block;
-  list-style: none;
   margin: 0.625rem 1.25rem;
   position: relative;
   cursor: pointer;
@@ -120,7 +127,7 @@ nav ul li::after {
   background: var(--main-color);
   position: absolute;
   left: 0;
-  bottom: -0.9375rem;
+  bottom: 0;
   transition: 0.5s;
 }
 
@@ -563,6 +570,10 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-bg ul {
+    flex-direction: column;
+  }
+
   .content {
     display: flex;
     justify-content: space-between;
@@ -588,15 +599,18 @@ span {
     margin-bottom: 1.25rem;
     font-weight: bold;
   }
+
   p {
     font-size: 0.8rem;
   }
+
   .download a {
     padding: 0.8rem 2rem;
     transition: 0.5s;
     margin: 0.8rem 0;
     font-size: 0.8rem;
   }
+
   .sosmed-icon {
     margin-bottom: 1rem;
     font-size: 2rem;
